@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>function genderCheck(){
+        var gender1 = document.getElementById("gen1").value;
+        var gender2 = document.getElementById("gen2").value;
+        
+        if((gen1).checked){
+            alert("The gender is male");
+        }else if((gen2).checked){
+            alert("The gender is female");
+        }else
+        alert("Please check the gender field");
+        
+        }
+        function checkGender(){
+        if((gen1).checked){
+            gender=1;
+        }
+        else if((gen2).checked){
+            gender=2;
+        }else
+        alert("Please check the gender field")
+        
+        switch(gender){
+            case 1: alert("The gender of the user is male");
+            break;
+            case 2: alert("The gender of the user is female");
+            break;
+            default:
+            alert("Please check the gender field");
+            break;
+        }
+        
+        }
+        
+        
+        </script>
+    <h2>Gender</h2>
+    Name: <input type="text">
+    gender:<input type="radio" value="male" id="gen1">Male
+    <input type="radio" value="female" id="gen2">Female
+<button onclick="genderCheck()">Else if</button>
+<button onclick="checkGender()">Switch</button>
+    
+</body>
+</html>
